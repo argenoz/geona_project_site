@@ -1,0 +1,25 @@
+.tablica_main_menu 
+{
+border-width:3px;border-style:solid;background-color: rgba(0, 0, 0, 0.0);
+border-collapse: collapse;align-items:center;
+}
+
+.cell_mm
+{
+border-width:1px;border-style:solid;	
+	text-align:center;
+}
+
+
+.cell_mm2 
+{
+	background-image:url(./pict/geona.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+
+.cell_mm2:hover 
+{
+	background-image:url(./pict/geona.jpg);
+	background-size: 190%;
+}
