@@ -6,7 +6,7 @@ class Menu
 	{
 	constructor()
 		{
-		document.crear();	
+		document.clear();	
 		
 		}
 	
