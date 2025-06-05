@@ -13,5 +13,5 @@ class Menu
 	
 	}
 
-function menu_delat(){new Menu();}
+function menu_delat(){alert("qweeqw");new Menu();}
 
