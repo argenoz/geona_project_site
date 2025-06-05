@@ -16,7 +16,7 @@ function dop_mm()
 	td.appendChild(d);
 	td.setAttribute("class","cell_mm");
 	d.setAttribute("class","cell_mm2");
-	d.addEventListenner("click",menu_delat);	
+	d.addEventListener("click",menu_delat);	
 	//td.classList.add("cell_mm2");
 	td.style.backgroundColor="#000000";
 	
