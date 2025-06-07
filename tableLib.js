@@ -11,5 +11,5 @@ class TableLib
 		
 	}
 
-alert(typeof([])==typeof([2,1,4,{}]));
+alert(typeof([])==typeof({"qwe":123}));
 
