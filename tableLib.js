@@ -1,26 +1,15 @@
 
-
-/*
-class Table
+class TableLib
 	{
-	constructor()
-		{
-			this.tlb=null;
-			
-		}
-	
+		constructor(jsonych)
+			{
+				let tbl_d = jsonych;
+				let st =[null,0,null,tbl_d];
+				
+			}
 		
-	
-	}
-*/
-
-
-function Table()
-	{
-	this.tbl = null;
-	this.youDoNothing = ()=>{return (this.tbl==null);};
-	
+		
 	}
 
-alert((new Table()).youDoNothing());
+alert(typeof([])==typeof([2,1,4,{}]));
 
