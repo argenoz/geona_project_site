@@ -12,4 +12,5 @@ class TableLib
 	}
 
 alert(typeof([])==typeof({"qwe":123}));
+alert(({"fff":11,54:"vv"}).keys);
 
