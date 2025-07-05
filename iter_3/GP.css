@@ -43,9 +43,7 @@
 
 .menu_text
 	{
-		filter:invert(100%);
-		position:relative;
-		top:0;
+		user-select:none;
 	}
 
 .menuButton
@@ -60,37 +58,143 @@
 		
 		background-image:url(./pict/geona.jpg);
 		background-size:140%;
-		
+		border-radius:4px;
 	}
 
-
+.mbFirst_
+	{
+		width:170;
+		height:100;
+		border-radius:4px;
+	}
 
 
 .mbFirstText
 	{
 		position:relative;
-		top:0;
+		color:#ffffff;
+		top:5px;
+		left:5px;
 	}
 	
-.mbFirst:hover  .mbFirstText
+.mbFirst_:hover  .mbFirstText
 	{
 		
 		position:relative;
 		color:#FFFFFF;
 		top:45px;
 		left:50px;
-		filter:invert(0%);
+		
 		font-size:18pt;
-		z-index: 0;
+		
 		
 		
 	}
 
-.mbFirst:hover
+.mbFirst_:hover
 	{
-		filter: blur(4px);
+		backdrop-filter:blur(4px);
 		
 	}	
+
+
+.mbSecond
+	{
+		
+		background-image:url(./pict/proc.png);
+		background-size:100%;
+		border-radius:4px;
+	}
+
+.mbSecond_
+	{
+		width:170;
+		height:100;
+		border-radius:4px;
+	}
+
+
+.mbSecondText
+	{
+		position:relative;
+		color:#ffffff;
+		top:5px;
+		left:5px;
+	}
+	
+.mbSecond_:hover  .mbSecondText
+	{
+		
+		position:relative;
+		color:#FFFFFF;
+		top:30px;
+		left:10px;
+		
+		font-size:16pt;
+		
+		
+		
+	}
+
+.mbSecond_:hover
+	{
+		backdrop-filter:blur(4px);
+		
+	}
+
+
+
+.mbThird
+	{
+		
+		background-image:url(./pict/tech_weap_othrs.png);
+		background-size:100%;
+		border-radius:4px;
+	}
+
+.mbThird_
+	{
+		width:170;
+		height:100;
+		border-radius:4px;
+	}
+
+
+.mbThirdText
+	{
+		position:relative;
+		color:#ffffff;
+		top:5px;
+		left:5px;
+	}
+	
+.mbThird_:hover  .mbThirdText
+	{
+		
+		position:relative;
+		color:#FFFFFF;
+		top:30px;
+		left:10px;
+		
+		font-size:13pt;
+		
+		
+		
+	}
+
+.mbThird_:hover
+	{
+		backdrop-filter:blur(4px);
+		
+	}	
+
+
+.authors_designers_developers
+	{
+		user-select:none;
+	}
+	
+
 
 
    
