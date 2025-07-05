@@ -192,8 +192,26 @@
 .authors_designers_developers
 	{
 		user-select:none;
+		font-size:17pt;
+		position:relative;
+		font-family:BB_and_BCS;
+	}
+
+.ab_ADD
+	{
+		border-radius:5px;
+		position:relative;
+		background-color:#026635;
+		width:170px;
+		height:100px;
+		
 	}
 	
+
+
+
+
+
 
 
 
