@@ -19,13 +19,13 @@
 	
 .small_menu
 	{
-		width:20%;
+		width:180px;
 		
 	}
 
 .output_ceil
 	{
-		height:70%;
+		height:calc(100%-180px);
 		
 	}
 	
@@ -83,7 +83,7 @@
 		position:relative;
 		color:#FFFFFF;
 		top:45px;
-		left:50px;
+		left:10px;
 		
 		font-size:18pt;
 		
@@ -128,7 +128,7 @@
 		position:relative;
 		color:#FFFFFF;
 		top:30px;
-		left:10px;
+		left:2px;
 		
 		font-size:16pt;
 		
@@ -174,7 +174,7 @@
 		position:relative;
 		color:#FFFFFF;
 		top:30px;
-		left:10px;
+		left:2px;
 		
 		font-size:13pt;
 		
@@ -204,7 +204,7 @@
 		background-color:#026635;
 		width:170px;
 		height:100px;
-		
+		left:0;
 	}
 	
 
