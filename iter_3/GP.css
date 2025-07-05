@@ -1,0 +1,96 @@
+.main_table
+	{
+	border-style:solid;
+	border-width:2px;
+	border-collapse:collapse;
+	}
+
+.table_all
+	{
+		width:90%;
+		height:100%;
+	}
+
+.ceil:
+	{
+		border-width:0.5px;
+		
+	}
+	
+.small_menu
+	{
+		width:20%;
+		
+	}
+
+.output_ceil
+	{
+		height:70%;
+		
+	}
+	
+.head_text
+	{
+		height:6%;
+		
+	}
+	
+	
+@font-face {
+    font-family: BB_and_BCS; /* Гарнитура шрифта */
+    src: url(fonts/Heart_Breaking_Bad.otf); /* Путь к файлу со шрифтом */
+   }
+
+.menu_text
+	{
+		filter:invert(100%);
+		position:relative;
+		top:0;
+	}
+
+.menuButton
+	{
+		width:170;
+		height:100;
+		
+	}
+
+.mbFirst
+	{
+		
+		background-image:url(./pict/geona.jpg);
+		background-size:140%;
+		
+	}
+
+
+
+
+.mbFirstText
+	{
+		position:relative;
+		top:0;
+	}
+	
+.mbFirst:hover  .mbFirstText
+	{
+		
+		position:relative;
+		color:#FFFFFF;
+		top:45px;
+		left:50px;
+		filter:invert(0%);
+		font-size:18pt;
+		z-index: 0;
+		
+		
+	}
+
+.mbFirst:hover
+	{
+		filter: blur(4px);
+		
+	}	
+
+
+   
