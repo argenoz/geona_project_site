@@ -11,18 +11,25 @@ function menu__(e)
 					{
 					let n = n_;
 					let ev = document.getElementById("ekrav_vyvoda");
-					ev.replaceChildren(); 
-					if(this.d[n]===undefined)
+					ev.replaceChildren();
+					let stro = n_.target.getAttribute('vybor');
+					if(this.d[stro]===undefined)
 						{
 						let xhr = new XMLHttpRequest();
-						xhr.open("GET","articles/"+n_.target.getAttribute('vybor')+".json");
+						xhr.open("GET","articles/"+stro+".json");
 						xhr.send();
-						alert(xhr.responseText);	
+						xhr.onload=() => {
+								this.d[stro] = JSON.parse(xhr.responseText)['ans'];
+						let evv = document.createElement('div');
+						evv.innerText= this.d[stro];
+						ev.appendChild(evv);
+										};	
 						}
 					else
 						{
-							
-							
+							let evv = document.createElement('div');
+							evv.innerText= this.d[stro];
+							ev.appendChild(evv);
 						}
 					};
 				
