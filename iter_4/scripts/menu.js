@@ -11,11 +11,12 @@ function menu__(e)
 					{
 					let n = n_;
 					let ev = document.getElementById("ekrav_vyvoda");
-					ev.replaceChildren();
+					
 					let stro = n_.target.getAttribute('vybor');
 					if(ev.getAttribute("vybor")!==stro)
 					if(this.d[stro]===undefined)
 						{
+						ev.replaceChildren();
 						let xhr = new XMLHttpRequest();
 						xhr.open("GET","articles/"+stro+".json");
 						xhr.send();
@@ -33,6 +34,7 @@ function menu__(e)
 						}
 					else
 						{
+							ev.replaceChildren();
 							let evv = document.createElement('div');
 							evv.innerText= this.d[stro];
 							ev.appendChild(evv);
