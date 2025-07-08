@@ -13,7 +13,7 @@ function menu__(e)
 					let ev = document.getElementById("ekrav_vyvoda");
 					ev.replaceChildren(); 
 					
-					if(this.d[n]==="undefined")
+					if(this.d[n]===undefined)
 						{
 						let xhr = new XMLHttpRequest();
 						alert("podgotovka");
