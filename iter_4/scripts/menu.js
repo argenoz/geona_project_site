@@ -15,7 +15,7 @@ function menu__(e)
 					if(this.d[n]===undefined)
 						{
 						let xhr = new XMLHttpRequest();
-						xhr.open("GET","articles/"+n_.target.vybor+".json");
+						xhr.open("GET","articles/"+n_.target.getAttribute('vybor')+".json");
 						xhr.send();
 						alert(xhr.responseText);	
 						}
