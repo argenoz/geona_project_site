@@ -33,8 +33,9 @@ function menu__(e)
 				} )();
 			}
 		
-		
-			G.vybor(e)
+			alert("nachelo");
+			G.vybor(e);
+			alert("konec");
 		
 	}
 
