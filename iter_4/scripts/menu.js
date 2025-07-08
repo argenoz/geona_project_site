@@ -17,7 +17,7 @@ function menu__(e)
 						{
 						let xhr = new XMLHttpRequest();
 						alert("podgotovka");
-						xhr.open("GET","articles/"+n_+".json",[false]);
+						xhr.open("GET","articles/"+n_+".json");
 						xhr.send();
 						alert(xhr.responseText);	
 						}
