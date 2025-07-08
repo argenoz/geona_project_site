@@ -12,12 +12,10 @@ function menu__(e)
 					let n = n_;
 					let ev = document.getElementById("ekrav_vyvoda");
 					ev.replaceChildren(); 
-					console.log(e.target.id);
 					if(this.d[n]===undefined)
 						{
 						let xhr = new XMLHttpRequest();
-						alert("podgotovka");
-						xhr.open("GET","articles/"+n_+".json");
+						xhr.open("GET","articles/"+n_.target.vybor+".json");
 						xhr.send();
 						alert(xhr.responseText);	
 						}
@@ -33,9 +31,9 @@ function menu__(e)
 				} )();
 			}
 		
-			alert("nachelo");
+			
 			G.vybor(e);
-			alert("konec");
+			
 		
 	}
 
