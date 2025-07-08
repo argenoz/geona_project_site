@@ -44,6 +44,7 @@ function menu__(e)
 							evv.style.left=0;
 							evv.style.position="relative";
 						}
+					else ev.setAttribute("vybor",stro);
 					};
 				
 				
