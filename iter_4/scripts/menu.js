@@ -26,6 +26,9 @@ function menu__(e)
 						ev.appendChild(evv);
 						ev.setAttribute("vybor",stro);
 						evv.setAttribute('align',"justify");
+						evv.style.top=0;
+						evv.style.left=0;
+						evv.style.position="absolute";
 										};	
 						}
 					else
@@ -35,6 +38,9 @@ function menu__(e)
 							ev.appendChild(evv);
 							ev.setAttribute("vybor",stro);
 							evv.setAttribute('align',"justify");
+							evv.style.top=0;
+							evv.style.left=0;
+							evv.style.position="absolute";
 						}
 					};
 				
