@@ -12,7 +12,7 @@ function menu__(e)
 					let n = n_;
 					let ev = document.getElementById("ekrav_vyvoda");
 					ev.replaceChildren(); 
-					
+					console.log(e.target.id);
 					if(this.d[n]===undefined)
 						{
 						let xhr = new XMLHttpRequest();
