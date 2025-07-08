@@ -13,6 +13,7 @@ function menu__(e)
 					let ev = document.getElementById("ekrav_vyvoda");
 					ev.replaceChildren();
 					let stro = n_.target.getAttribute('vybor');
+					if(ev.getAttribute("vybor")!==stro)
 					if(this.d[stro]===undefined)
 						{
 						let xhr = new XMLHttpRequest();
@@ -23,6 +24,8 @@ function menu__(e)
 						let evv = document.createElement('div');
 						evv.innerText= this.d[stro];
 						ev.appendChild(evv);
+						ev.setAttribute("vybor",stro);
+						evv.setAttribute('align',"justify");
 										};	
 						}
 					else
@@ -30,6 +33,8 @@ function menu__(e)
 							let evv = document.createElement('div');
 							evv.innerText= this.d[stro];
 							ev.appendChild(evv);
+							ev.setAttribute("vybor",stro);
+							evv.setAttribute('align',"justify");
 						}
 					};
 				
