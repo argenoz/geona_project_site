@@ -33,7 +33,7 @@ function menu__(e)
 			}
 		
 		
-			alert(G.d[e]);
+			G.vybor(e)
 		
 	}
 
