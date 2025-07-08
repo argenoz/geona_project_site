@@ -28,7 +28,7 @@ function menu__(e)
 						evv.setAttribute('align',"justify");
 						evv.style.top=0;
 						evv.style.left=0;
-						evv.style.position="absolute";
+						evv.style.position="relative";
 										};	
 						}
 					else
@@ -40,7 +40,7 @@ function menu__(e)
 							evv.setAttribute('align',"justify");
 							evv.style.top=0;
 							evv.style.left=0;
-							evv.style.position="absolute";
+							evv.style.position="relative";
 						}
 					};
 				
