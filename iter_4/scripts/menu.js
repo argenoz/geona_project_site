@@ -16,6 +16,7 @@ function menu__(e)
 					if(this.d[n]=="undefined")
 						{
 						let xhr = new XMLHttpRequest();
+						alert("podgotovka");
 						xhr.open("GET","articles/"+n_+".json",[false]);
 						xhr.send();
 						alert(xhr.responseText);	
