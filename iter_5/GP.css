@@ -21,6 +21,7 @@
 	{
 		width:180px;
 		
+		
 	}
 
 .output_ceil
@@ -210,6 +211,8 @@
 .geona_theme
 	{
 		background-color:#2F4F4F;
+		background-image:url('pict/fon.svg');
+		background-size:cover;
 	}
 
 
