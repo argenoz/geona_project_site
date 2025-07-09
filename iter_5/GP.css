@@ -1,0 +1,218 @@
+.main_table
+	{
+	border-style:solid;
+	border-width:2px;
+	border-collapse:collapse;
+	}
+
+.table_all
+	{
+		width:90%;
+		height:100%;
+	}
+
+.ceil:
+	{
+		border-width:0.5px;
+		
+	}
+	
+.small_menu
+	{
+		width:180px;
+		
+	}
+
+.output_ceil
+	{
+		height:calc(100%-180px);
+		
+	}
+	
+.head_text
+	{
+		height:6%;
+		
+	}
+	
+	
+@font-face {
+    font-family: BB_and_BCS; /* Гарнитура шрифта */
+    src: url(fonts/Heart_Breaking_Bad.otf); /* Путь к файлу со шрифтом */
+   }
+
+.menu_text
+	{
+		user-select:none;
+	}
+
+.menuButton
+	{
+		width:170;
+		height:100;
+		
+	}
+
+.mbFirst
+	{
+		
+		background-image:url(./pict/geona.jpg);
+		background-size:140%;
+		border-radius:4px;
+	}
+
+.mbFirst_
+	{
+		width:170;
+		height:100;
+		border-radius:4px;
+	}
+
+
+.mbFirstText
+	{
+		position:relative;
+		color:#ffffff;
+		top:5px;
+		left:5px;
+	}
+	
+.mbFirst_:hover  .mbFirstText
+	{
+		
+		position:relative;
+		color:#FFFFFF;
+		top:45px;
+		left:10px;
+		
+		font-size:18pt;
+		
+		
+		
+	}
+
+.mbFirst_:hover
+	{
+		backdrop-filter:blur(4px);
+		
+	}	
+
+
+.mbSecond
+	{
+		
+		background-image:url(./pict/proc.png);
+		background-size:100%;
+		border-radius:4px;
+	}
+
+.mbSecond_
+	{
+		width:170;
+		height:100;
+		border-radius:4px;
+	}
+
+
+.mbSecondText
+	{
+		position:relative;
+		color:#ffffff;
+		top:5px;
+		left:5px;
+	}
+	
+.mbSecond_:hover  .mbSecondText
+	{
+		
+		position:relative;
+		color:#FFFFFF;
+		top:30px;
+		left:2px;
+		
+		font-size:16pt;
+		
+		
+		
+	}
+
+.mbSecond_:hover
+	{
+		backdrop-filter:blur(4px);
+		
+	}
+
+
+
+.mbThird
+	{
+		
+		background-image:url(./pict/tech_weap_othrs.png);
+		background-size:100%;
+		border-radius:4px;
+	}
+
+.mbThird_
+	{
+		width:170;
+		height:100;
+		border-radius:4px;
+	}
+
+
+.mbThirdText
+	{
+		position:relative;
+		color:#ffffff;
+		top:5px;
+		left:5px;
+	}
+	
+.mbThird_:hover  .mbThirdText
+	{
+		
+		position:relative;
+		color:#FFFFFF;
+		top:30px;
+		left:2px;
+		
+		font-size:13pt;
+		
+		
+		
+	}
+
+.mbThird_:hover
+	{
+		backdrop-filter:blur(4px);
+		
+	}	
+
+
+.authors_designers_developers
+	{
+		user-select:none;
+		font-size:17pt;
+		position:relative;
+		font-family:BB_and_BCS;
+	}
+
+.ab_ADD
+	{
+		border-radius:5px;
+		position:relative;
+		background-color:#026635;
+		width:170px;
+		height:100px;
+		left:0;
+	}
+	
+
+
+
+
+
+
+
+
+   
