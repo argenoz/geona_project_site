@@ -26,10 +26,8 @@ function menu__(e)
 						xhr.onload=() => {
 							i=0;
 						if(xhr.status!=200)
-							{
-								i=0;
-								return;
-							}
+							return;
+							
 								//this.d[stro] = JSON.parse(xhr.responseText)['ans'];
 								this.d[stro] =xhr.responseText;
 						let evv = document.createElement('div');
