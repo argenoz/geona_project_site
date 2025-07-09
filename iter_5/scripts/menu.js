@@ -12,7 +12,7 @@ function menu__(e)
 				this.vybor = (n_) => 
 					{
 					let n = n_;
-					let ev = document.getElementById("ekrav_vyvoda");
+					let ev = document.getElementById("ev");
 					
 					let stro = n_.target.getAttribute('vybor');
 					if(ev.getAttribute("vybor")!==stro)
