@@ -19,7 +19,7 @@ function menu__(e)
 					if(ev.getAttribute("vybor")!==stro)
 					if(this.d[stro]===undefined)
 						{
-						ev.replaceChildren();
+						
 						let xhr = new XMLHttpRequest();
 						xhr.open("GET","articles/"+stro+".html");
 						xhr.send();
@@ -27,7 +27,7 @@ function menu__(e)
 							i=0;
 						if(xhr.status!=200)
 							return;
-							
+						ev.replaceChildren();	
 								//this.d[stro] = JSON.parse(xhr.responseText)['ans'];
 								this.d[stro] =xhr.responseText;
 						let evv = document.createElement('div');
