@@ -24,7 +24,8 @@ function menu__(e)
 						xhr.send();
 						xhr.onload=() => {
 							i=0;
-								this.d[stro] = JSON.parse(xhr.responseText)['ans'];
+								//this.d[stro] = JSON.parse(xhr.responseText)['ans'];
+								this.d[stro] =xhr.responseText;
 						let evv = document.createElement('div');
 						//evv.innerText= this.d[stro];
 						evv.innerHTML=this.d[stro];
