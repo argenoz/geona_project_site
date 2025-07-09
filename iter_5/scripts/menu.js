@@ -20,7 +20,7 @@ function menu__(e)
 						{
 						ev.replaceChildren();
 						let xhr = new XMLHttpRequest();
-						xhr.open("GET","articles/"+stro+".json");
+						xhr.open("GET","articles/"+stro+".html");
 						xhr.send();
 						xhr.onload=() => {
 							i=0;
