@@ -26,7 +26,8 @@ function menu__(e)
 							i=0;
 								this.d[stro] = JSON.parse(xhr.responseText)['ans'];
 						let evv = document.createElement('div');
-						evv.innerText= this.d[stro];
+						//evv.innerText= this.d[stro];
+						evv.innerHTML=this.d[stro];
 						ev.appendChild(evv);
 						ev.setAttribute("vybor",stro);
 						evv.setAttribute('align',"justify");
@@ -40,7 +41,8 @@ function menu__(e)
 							i=0;
 							ev.replaceChildren();
 							let evv = document.createElement('div');
-							evv.innerText= this.d[stro];
+							//evv.innerText= this.d[stro];
+							evv.innerHTML=this.d[stro];
 							ev.appendChild(evv);
 							ev.setAttribute("vybor",stro);
 							evv.setAttribute('align',"justify");
