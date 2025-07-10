@@ -81,7 +81,7 @@ function menu__(e)
 			if(e.target.getAttribute('vybor')!==null)
 				{
 				G.vybor(e);
-				e.stopPropagation();					
+				e.stopPropagation();
 				}
 			else
 				e.target.parentElement.click();
