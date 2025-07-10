@@ -20,13 +20,13 @@
 .small_menu
 	{
 		width:180px;
-		
+		height:calc(100% - 80px);
 		
 	}
 
 .output_ceil
 	{
-		height:calc(100% - 180px);
+		height:calc(100% - 80px);
 		
 	}
 	
