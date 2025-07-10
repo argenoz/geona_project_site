@@ -3,6 +3,7 @@ let i = 0;
 
 function menu__(e)
 	{
+		/*
 		let tg = e.target,tmp;
 		while(true)
 			{
@@ -13,6 +14,7 @@ function menu__(e)
 						break;
 				tg = tg.parentElement;
 			}
+			*/
 		if(i==0)
 		if(G==0)
 			{
@@ -26,7 +28,7 @@ function menu__(e)
 					let ev = document.getElementById("ev");
 					
 					ev = document.getElementById("ekrav_vyvoda");
-					let stro = tg.getAttribute('vybor');
+					let stro = n.target.getAttribute('vybor');
 					if(ev.getAttribute("vybor")!==stro)
 					if(this.d[stro]===undefined)
 						{
@@ -74,9 +76,15 @@ function menu__(e)
 				} )();
 			}
 		
-			e.stopPropagation();
-			G.vybor(tg);
 			
+			
+			if(e.target.getAttribute('vybor')!==null)
+				{
+				G.vybor(e);
+				e.stopPropagation();					
+				}
+			else
+				e.target.parentElement.click();
 		
 	}
 
