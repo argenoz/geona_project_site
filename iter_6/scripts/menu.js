@@ -3,18 +3,6 @@ let i = 0;
 
 function menu__(e)
 	{
-		/*
-		let tg = e.target,tmp;
-		while(true)
-			{
-				tmp = tg.getAttribute('vybor');
-				//console.log(tmp);
-				if(tmp!==undefined)
-					if(tmp!==null)
-						break;
-				tg = tg.parentElement;
-			}
-			*/
 		if(i==0)
 		if(G==0)
 			{
