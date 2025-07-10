@@ -274,6 +274,7 @@
 .geona_article
 	{
 		overflow-y: scroll;
+		width:calc(100% - 180px);
 		height: calc(100% - 80px);
 	}
 	
