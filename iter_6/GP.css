@@ -28,7 +28,7 @@
 	{
 		height:calc(100% - 80px);
 		width:calc(100% - 180px);
-		
+		overflow-y: scroll;
 	}
 	
 .head_text
@@ -60,7 +60,7 @@
 	{
 		
 		background-image:url(./pict/geona.jpg);
-		background-size:cover;
+		background-size:140%;
 		border-radius:4px;
 	}
 
@@ -270,7 +270,7 @@
 
 .geona_article
 	{
-		overflow-y: scroll;
+		
 		width:100%;
 		height: 100%;
 	}
