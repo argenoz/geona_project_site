@@ -41,37 +41,17 @@ function menu__(e)
 						if(xhr.status!=200)
 							return;
 						ev.replaceChildren();	
-								//this.d[stro] = JSON.parse(xhr.responseText)['ans'];
 								this.d[stro] =xhr.responseText;
-						//let evv = document.createElement('div');
-						//evv.innerText= this.d[stro];
-						//evv = ev;
-						//evv.innerHTML=this.d[stro];
-						//ev.appendChild(evv);
-						ev.innerText= this.d[stro];
+						ev.innerHTML= this.d[stro];
 						ev.setAttribute("vybor",stro);
-						//evv.setAttribute('align',"justify");
-						//evv.style.top=0;
-						//evv.style.left=0;
-						//evv.style.position="relative";
 										};	
 						}
 					else
 						{
 							i=0;
 							ev.replaceChildren();
-							//let evv = document.createElement('div');
-							//evv.innerText= this.d[stro];
-							ev.innerText= this.d[stro];
-							/*
-							evv.innerHTML=this.d[stro];
-							ev.appendChild(evv);
+							ev.innerHTML= this.d[stro];
 							ev.setAttribute("vybor",stro);
-							evv.setAttribute('align',"justify");
-							evv.style.top=0;
-							evv.style.left=0;
-							evv.style.position="relative";
-							*/
 						}
 					else {ev.setAttribute("vybor",stro); i=0;}
 					};
