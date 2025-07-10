@@ -15,7 +15,7 @@ function menu__(e)
 					let n = n_;
 					let ev = document.getElementById("ev");
 					
-					ev = document.getElementById("ekrav_vyvoda");
+					//ev = document.getElementById("ekrav_vyvoda");
 					let stro = n.target.getAttribute('vybor');
 					if(ev.getAttribute("vybor")!==stro)
 					if(this.d[stro]===undefined)
