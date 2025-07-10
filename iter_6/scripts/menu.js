@@ -45,6 +45,7 @@ function menu__(e)
 								this.d[stro] =xhr.responseText;
 						let evv = document.createElement('div');
 						//evv.innerText= this.d[stro];
+						evv = ev;
 						evv.innerHTML=this.d[stro];
 						ev.appendChild(evv);
 						ev.setAttribute("vybor",stro);
