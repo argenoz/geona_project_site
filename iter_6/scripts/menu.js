@@ -63,10 +63,17 @@ function menu__(e)
 				} )();
 			}
 		
-			
+			e.stopPropagation();
 			G.vybor(e);
 			
 		
 	}
 
+
+
+function set_opt()
+	{
+		let g = document.getElementById('ab_auth_des_dev');
+		g.addEventListener('onclick',menu__);
+	}
 
