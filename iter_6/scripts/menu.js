@@ -3,6 +3,15 @@ let i = 0;
 
 function menu__(e)
 	{
+		let tg = e.target,tmp;
+		while(true)
+			{
+				tmp = tg.getAttribute('vybor');
+				if(tmp!==undefined)
+					if(tmp!==null)
+						break;
+				tg = tg.parentElement;
+			}
 		if(i==0)
 		if(G==0)
 			{
@@ -15,7 +24,7 @@ function menu__(e)
 					let ev = document.getElementById("ev");
 					
 					ev = document.getElementById("ekrav_vyvoda");
-					let stro = n_.target.getAttribute('vybor');
+					let stro = tg.getAttribute('vybor');
 					if(ev.getAttribute("vybor")!==stro)
 					if(this.d[stro]===undefined)
 						{
