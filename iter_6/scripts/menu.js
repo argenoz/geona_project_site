@@ -16,6 +16,7 @@ function menu__(e)
 		if(G==0)
 			{
 				i=1;
+				
 				G = new ( function()  {
 				this.d = {};	
 				this.vybor = (n_) => 
