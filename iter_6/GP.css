@@ -284,3 +284,8 @@
 		padding-top:5px;
 	}
 
+
+.vtor_strok
+	{
+		height:calc(100% - 18pt);
+	}
