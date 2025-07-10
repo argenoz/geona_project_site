@@ -11,7 +11,7 @@
 		height:100%;
 	}
 
-.ceil:
+.ceil
 	{
 		border-width:0.5px;
 		
@@ -26,7 +26,7 @@
 
 .output_ceil
 	{
-		height:calc(100%-180px);
+		height:calc(100% - 180px);
 		
 	}
 	
