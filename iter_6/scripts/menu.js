@@ -7,6 +7,7 @@ function menu__(e)
 		while(true)
 			{
 				tmp = tg.getAttribute('vybor');
+				//console.log(tmp);
 				if(tmp!==undefined)
 					if(tmp!==null)
 						break;
@@ -74,7 +75,7 @@ function menu__(e)
 			}
 		
 			e.stopPropagation();
-			G.vybor(e);
+			G.vybor(tg);
 			
 		
 	}
