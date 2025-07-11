@@ -1,0 +1,123 @@
+
+
+.tabl_part
+	{
+		border-style:solid;
+		border-collapse:collapse;
+	}
+	
+.main_table
+	{
+		border-width:3px;
+		width:100%;
+		height:100%;
+	}
+	
+.head_row
+	{
+		height:100px;
+	}
+
+.title_txt
+	{
+		font-size:30pt;
+	}
+
+.inform_row
+	{
+		height:calc( 100% - 100px );
+	}
+	
+.small_menu_ceil
+	{
+		width:180px;
+	}
+
+.output_ceil
+	{
+		width: calc(100% - 100px);
+		
+	}
+
+.coat
+	{
+		position:relative;
+		width:100%;
+		height:100%;
+		overflow-y:auto;
+		
+	}	
+
+.menu_coat
+	{
+		padding-left:2%;
+		padding-right:2%;
+	}	
+	
+.menu_table
+	{
+		width:90%;
+	}
+
+.menu_button
+	{
+		height:100px;
+		border-radius:10px;
+		width:170px;
+		background-size:cover;
+		user-select:none;
+		
+	}
+
+.menu_button_text
+	{
+		position:relative;
+		top:10px;
+		left:10px;
+		word-break:normal;
+	}
+
+.first_MB_text
+	{
+		filter:invert(100%);
+	}
+
+.first_MB
+	{
+		border-radius:10px;
+	}
+
+.first_MB:hover 
+	{
+		backdrop-filter:blur(4px);
+	}
+
+.menu_button:hover .menu_button_text
+	{
+		top:30px;
+		left:10px;
+		font-size:15pt;
+		word-break:normal;
+	}
+
+
+@font-face {
+    font-family: BB_and_BCS; /* Гарнитура шрифта */
+    src: url(fonts/Heart_Breaking_Bad.otf); /* Путь к файлу со шрифтом */
+   }
+  
+.authors_designers_developers
+	{
+		user-select:none;
+		font-size:17pt;
+		position:relative;
+		font-family:BB_and_BCS;
+	}
+
+.ab_ADD
+	{
+		background-color:#026635;
+		width:170px;
+		height:100px;
+	}
+	
