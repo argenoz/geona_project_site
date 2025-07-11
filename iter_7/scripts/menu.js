@@ -38,7 +38,7 @@ function just_do(e)
 													xhr.onload = () =>
 														{
 														if(xhr.status!=200)
-														{i=0;alert('beda');}
+														{i=0;}
 														else
 															{
 																tg.setAttribute('vybor',st);
