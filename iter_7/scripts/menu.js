@@ -91,6 +91,7 @@ function createAll()
 
 function doSomethingINeed()
 	{
+		alert("5th");
 		let tg=document.getElementById('ev');
 		tg.style.height=( window.innerHeight - 110 )+"px";
 		tg.style.width="100%";
