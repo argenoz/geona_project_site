@@ -92,10 +92,13 @@ function createAll()
 function doSomethingINeed()
 	{
 		let tg=document.getElementById('ev');
-		tg.style.height="100%";
+		tg.style.height=( window.innerHeight - 110 )+"px";
 		tg.style.width="100%";
-		tg.style.overflowX="auto";
+		tg.style.overflowY="auto";
+		tg.style.overflowX="hidden";
 		tg.style.position="relative";
+		
+		
 	}
 
 
