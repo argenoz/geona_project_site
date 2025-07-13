@@ -11,8 +11,8 @@
 	{
 		border-width:3px;
 		position:relative;
-		width:100%;
-		height:50%;
+		width:99%;
+		height:99%;
 	}
 	
 .head_row
@@ -27,7 +27,7 @@
 
 .inform_row
 	{
-		height:calc( 100% - 100px );
+		height:calc(100% - 110px );
 	}
 	
 .small_menu_ceil
@@ -130,5 +130,10 @@
 		background-color:#026635;
 		width:170px;
 		height:100px;
+	}
+	
+.geona_theme
+	{
+		background-color:#4f4f4f;
 	}
 	

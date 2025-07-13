@@ -70,3 +70,32 @@ function just_do(e)
 		
 		e.stopPropagation;
 	}
+
+
+function createAll()
+	{
+		let maxi = (a,b) => {if(a<b) a=b; return a; };
+		let w = window.innerWidth,h=window.innerHeight;
+		let tbl = document.createElement('table');
+		let tr = document.createElement('tr');
+		let td = document.createElement('td');
+		let div1,div2;
+		
+		tb.style.width=1;
+		
+		
+		td.setAttribute('colspan',2);
+		tr.style.height='150px';
+		tr.style.width=w*0;
+	}
+
+function doSomethingINeed()
+	{
+		let tg=document.getElementById('ev');
+		tg.style.height="100%";
+		tg.style.width="100%";
+		tg.style.overflowX="auto";
+		tg.style.position="relative";
+	}
+
+

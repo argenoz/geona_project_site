@@ -1,3 +1,9 @@
+
+.geona_theme
+	{
+		background-color:#110000;
+	}
+
 .main_table
 	{
 	border-style:solid;
@@ -8,7 +14,7 @@
 .table_all
 	{
 		width:100%;
-		height:95%;
+		height:100%;
 	}
 
 .ceil
@@ -16,19 +22,30 @@
 		border-width:0.5px;
 		
 	}
+
+.head_row
+	{
+		width:180px;
+		height:120px;
+	}
 	
 .small_menu
 	{
-		width:180px;
-		height:calc(100% - 120px);
+		width:100%;
+		height:100%;
 		
+	}
+	
+.inform_row
+	{
+		height:calc(100% - 125px);
 	}
 
 .output_ceil
 	{
-		height:calc(100% - 40px);
-		width:calc(100% - 180px);
-		overflow-y: scroll;
+		height:100%;
+		width:100%;
+		
 	}
 	
 .head_text
@@ -210,10 +227,7 @@
 		left:0;
 	}
 	
-.geona_theme
-	{
-		background-color:#2F4F4F;
-	}
+
 
 
 .arti_pictures
