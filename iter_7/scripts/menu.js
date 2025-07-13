@@ -26,7 +26,6 @@ function just_do(e)
 		let stro =undefined;
 		while(true)
 			{
-			console.log(tg.getAttribute('vybor'));
 			if(tg.getAttribute('id')=='the_coat')
 				return;
 			else
