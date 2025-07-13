@@ -2,6 +2,21 @@
 let G=0;
 let i=0;
 
+
+function doSomethingINeed()
+	{
+
+		let tg=document.getElementById('ev');
+		//tg.style.height=( window.innerHeight - 110 )+"px";
+		tg.style.height="100%";
+		tg.style.width="100%";
+		tg.style.overflowY="auto";
+		tg.style.overflowX="hidden";
+		tg.style.position="relative";
+		
+		
+	}
+
 function just_do(e)
 	{
 		if(i!=0) return;
@@ -45,6 +60,7 @@ function just_do(e)
 																this.d[st]=xhr.responseText;
 																tg.innerHTML = this.d[st];
 																i=0;
+																doSomethingINeed();
 															}
 														};
 													xhr.onerror=()=>{i=0;}
@@ -56,6 +72,7 @@ function just_do(e)
 													tg.innerHTML= this.d[st];
 													tg.setAttribute('vybor',st);
 													i=0;
+													doSomethingINeed();
 												}
 												else i=0;
 												
@@ -89,10 +106,10 @@ function createAll()
 		tr.style.width=w*0;
 	}
 
-function doSomethingINeed()
+function doSomethingINeed_2()
 	{
-		alert("5th");
 		let tg=document.getElementById('ev');
+		//tg.style.height="100%";
 		tg.style.height=( window.innerHeight - 110 )+"px";
 		tg.style.width="100%";
 		tg.style.overflowY="auto";
