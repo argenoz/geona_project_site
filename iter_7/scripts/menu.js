@@ -1,11 +1,12 @@
 
 let G=0;
 let i=0;
-
+let funka=0;
 
 function doSomethingINeed()
 	{
-
+		funka();
+		return 0;
 		let tg=document.getElementById('ev');
 		//tg.style.height=( window.innerHeight - 110 )+"px";
 		tg.style.height="100%";
@@ -118,5 +119,7 @@ function doSomethingINeed_2()
 		
 		
 	}
+
+funka = doSomethingINeed_2;
 
 
