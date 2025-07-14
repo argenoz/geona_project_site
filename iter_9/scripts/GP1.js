@@ -24,7 +24,7 @@ function menu_creator()
 		HD_he = 110;
 		HD_wi = tb_wi;
 		SM_he = maxi(200,tb_he-HD_he);
-		SM_wi=180;
+		SM_wi=190;
 		OP_wi = maxi(200,tb_wi-SM_wi);
 		
 		tbl.classList= "main_table big_table";

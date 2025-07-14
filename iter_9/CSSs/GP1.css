@@ -28,8 +28,16 @@
 .small_menu_botton
 	{
 		background-size:cover;
+		position:relative;
 		border-radius:5px;
 		width:170px;
 		height:100px;
 	}
 
+
+.small_menu_botton_text
+	{
+		position:relative;
+		top:10px;
+		left:10px;
+	}
