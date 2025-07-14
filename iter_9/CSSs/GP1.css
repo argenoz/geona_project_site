@@ -65,7 +65,7 @@
 
 @font-face {
     font-family: BB_and_BCS; /* Гарнитура шрифта */
-    src: url(fonts/Heart_Breaking_Bad.otf); /* Путь к файлу со шрифтом */
+    src: url(./fonts/Heart_Breaking_Bad.otf); /* Путь к файлу со шрифтом */
    }
   
 .authors_designers_developers
