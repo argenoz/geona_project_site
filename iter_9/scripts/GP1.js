@@ -16,14 +16,15 @@ function menu_creator()
 		let SM_he, SM_wi, HD_he,HD_wi,OP_wi;
 		let head_he = 150;
 		let tbl = document.createElement('table');
-		document.body.appendChild(tbl);
+		//document.body.appendChild(tbl);
+		document.getElementById('cntr').appendChild(tbl);
 		let tr = document.createElement('tr');
 		let td = document.createElement('td');
 		let div = document.createElement('div');
 		HD_he = 110;
 		HD_wi = tb_wi;
 		SM_he = maxi(200,tb_he-HD_he);
-		SM_wi=175;
+		SM_wi=180;
 		OP_wi = maxi(200,tb_wi-SM_wi);
 		
 		tbl.classList= "main_table big_table";
