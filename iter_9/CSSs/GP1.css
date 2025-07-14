@@ -1,0 +1,35 @@
+
+.geona_theme
+	{
+		background-color:#4f4f4f;
+	}
+	
+
+
+.main_table
+	{
+		border-style:solid;
+		border-collapse:collapse;
+		position:relative;
+	}
+
+
+.big_table
+	{
+		border-width:4px;
+	}
+
+.big_table_inner
+	{
+		border-width:2px;
+	}
+
+
+.small_menu_botton
+	{
+		background-size:cover;
+		border-radius:5px;
+		width:170px;
+		height:100px;
+	}
+

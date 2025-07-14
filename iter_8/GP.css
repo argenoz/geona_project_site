@@ -1,0 +1,15 @@
+.the_table
+	{
+	border-style:solid;
+	border-collapse:collapse;
+	}
+
+.big_table
+	{
+		border-width:4px;
+	}
+
+.dflt_tbl_opt
+	{
+		border-width:1px;
+	}
