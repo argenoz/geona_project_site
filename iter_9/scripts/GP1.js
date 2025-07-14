@@ -1,8 +1,77 @@
 let G=0;
 let gl_he = 0;
 let gl_wi = 0;
+let i=0;
 
-
+function just_do(e)
+	{
+		if(i!=0) return;
+		else i=1;
+		let tg = e.target;
+		let stro =undefined;
+		while(true)
+			{
+			if(tg.getAttribute('id')=='small_menu_div')
+				return;
+			else
+				if(tg.getAttribute('vybor')!==undefined && tg.getAttribute('vybor')!==null)
+					{
+						stro = tg.getAttribute('vybor');
+						break;
+					}
+				else
+					tg = tg.parentElement;
+			}
+		if(G==0)
+			G = new (function()
+						{
+							this.d={};
+							this.vybor = (st)=>
+										{ 
+											
+											let tg = document.getElementById('ekran');
+											let xhr;
+											if(this.d[st]===undefined)
+												{
+													xhr = new XMLHttpRequest();
+													xhr.open("GET","articles/"+st+".html");
+													xhr.onload = () =>
+														{
+														if(xhr.status!=200)
+														{i=0;}
+														else
+															{
+																tg.setAttribute('vybor',st);
+																this.d[st]=xhr.responseText;
+																tg.innerHTML = this.d[st];
+																i=0;
+																//doSomethingINeed();
+															}
+														};
+													xhr.onerror=()=>{i=0;}
+													xhr.send();
+												}
+											else
+												if(tg.getAttribute('vybor')!=st)
+												{
+													tg.innerHTML= this.d[st];
+													tg.setAttribute('vybor',st);
+													i=0;
+													//doSomethingINeed();
+												}
+												else i=0;
+												
+											
+										};
+							
+						}
+					)();
+		
+		G.vybor(stro);
+		
+		
+		e.stopPropagation;
+	}
 
 
 
@@ -24,7 +93,7 @@ function menu_creator()
 		HD_he = 110;
 		HD_wi = tb_wi;
 		SM_he = maxi(200,tb_he-HD_he);
-		SM_wi=190;
+		SM_wi=200;
 		OP_wi = maxi(200,tb_wi-SM_wi);
 		
 		tbl.classList= "main_table big_table";
@@ -72,6 +141,7 @@ function menu_creator()
 		div.style.position="relative";
 		div.setAttribute('id','small_menu_div');
 		td.appendChild(div);
+		div.addEventListener('click',just_do)
 		
 		td = document.createElement('td');
 		td.setAttribute('id','ev');
@@ -94,7 +164,7 @@ function menu_creator()
 				xhr.open('GET','small_menu.html');
 				xhr.onload=()=>
 					{
-					document.getElementById('small_menu_div').innerHTML=xhr.response;	
+					document.getElementById('small_menu_div').innerHTML=xhr.responseText;	
 					};
 				xhr.send();
 				
