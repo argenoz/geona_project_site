@@ -79,7 +79,8 @@ function just_do(e)
 function menu_creator()
 	{
 		let maxi = (a,b)=>{if(a<b) a=b; return a;};
-		
+		let tmp=1;
+		let font_size_of_header = 50;
 		let wi = window.innerWidth,he=window.innerHeight;
 		let tb_wi = wi*(9.3/10),tb_he = he*(9.6/10);
 		let SM_he, SM_wi, HD_he,HD_wi,OP_wi;
@@ -117,7 +118,15 @@ function menu_creator()
 		tr.setAttribute('id','header_div');
 		tr.style.width = HD_wi;
 		tr.style.height = HD_he;
-		td.appendChild(div);
+		
+		div.innerText='Проект "Геона"';
+		
+		tmp = document.createElement('center');
+		tmp.appendChild(div);
+		tmp.style.position="relative";
+		tmp.style.top=20;
+		div.style.fontSize=font_size_of_header;
+		td.appendChild(tmp);
 		td.setAttribute('colspan','2');
 		
 		tr = document.createElement('tr');
@@ -158,7 +167,7 @@ function menu_creator()
 		
 		
 		(
-		function()
+		()=>
 			{
 				let xhr = new XMLHttpRequest();
 				xhr.open('GET','small_menu.html');
