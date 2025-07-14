@@ -69,6 +69,7 @@ function menu_creator()
 		div.style.height=SM_he*0.95;
 		div.style.overflowY="auto";
 		div.style.position="relative";
+		div.setAttribute('id','small_menu_div');
 		td.appendChild(div);
 		
 		td = document.createElement('td');
@@ -88,7 +89,13 @@ function menu_creator()
 		(
 		function()
 			{
-				
+				let xhr = new XMLHttpRequest();
+				xhr.open('GET','small_menu.html');
+				xhr.onload=()=>
+					{
+					document.getElementById('small_menu_div').innerHTML=xhr.response;	
+					};
+				xhr.send();
 				
 			}
 		)();
