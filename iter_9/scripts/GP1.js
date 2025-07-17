@@ -64,7 +64,7 @@ function just_do(e)
 														fon.style = "position:absolute;"+"border-radius:5px;padding:5px 5px 5px 5px;"+
 																	"top:"+(((he-pct.height)/5.0)+e[0].height+20)+";"+
 																	"left:"+(wi/6.0)+";"+
-																	"height:"+((he-(((he-pct.height)/5.0)+e[0].height+20))*4/5.0)+";width:"+(wi*2/3.0)+";background-color:#FFDEAD;border-style:solid;border-width:4px;overflow-y:scroll;";
+																	"height:"+((he-(((he-pct.height)/5.0)+e[0].height+20))*4/5.0)+";width:"+(wi*2/3.0)+";background-color:#FFDEAD;border-style:solid;border-width:4px;overflow-y:auto;";
 														e[1].appendChild(fon);
 														let xhr = new XMLHttpRequest();
 														xhr.open("GET","./picts/dscrpt/"+e[3]);
@@ -340,10 +340,11 @@ function pict_loaded(e)
 		
 		he=tmp.height*mnj;
 		wi=tmp.width*mnj;
-		tmp.style="height:"+he+";width:"+wi+";";
+		tmp.style="height:"+he+";width:"+wi+";"+"user-select:none;";
 		//console.log([r[0],r[1],tmp.width,tmp.height,mnj]);
 		//alert(to_BG);
 		tmp.addEventListener('click',to_BG);
+		
 		
 	}
 
