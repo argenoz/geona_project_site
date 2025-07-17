@@ -4,16 +4,17 @@ let gl_wi = 0;
 let i=0;
 let wi = window.innerWidth,he=window.innerHeight;
 let MC=0;
-let small_pict_size_x=210,small_pict_size_y=200;
+let small_pict_size_x=210.0,small_pict_size_y=200.0;
 
 
-
+let P_W=0,to_BG=0;
 
 function just_do(e)
 	{
 
 		let pictures_work = () =>
 						{
+							
 							let toBigPicture = (e)=>
 									{
 										let pct=e.target.src;
@@ -63,7 +64,7 @@ function just_do(e)
 														fon.style = "position:absolute;"+"border-radius:5px;padding:5px 5px 5px 5px;"+
 																	"top:"+(((he-pct.height)/5.0)+e[0].height+20)+";"+
 																	"left:"+(wi/6.0)+";"+
-																	"height:100px;width:"+(wi*2/3.0)+";background-color:#FFDEAD;border-style:solid;border-width:4px;overflowY:scroll;";
+																	"height:"+((he-(((he-pct.height)/5.0)+e[0].height+20))*4/5.0)+";width:"+(wi*2/3.0)+";background-color:#FFDEAD;border-style:solid;border-width:4px;overflow-y:scroll;";
 														e[1].appendChild(fon);
 														let xhr = new XMLHttpRequest();
 														xhr.open("GET","./picts/dscrpt/"+e[3]);
@@ -82,6 +83,8 @@ function just_do(e)
 											}
 										
 									};
+							to_BG = toBigPicture;
+							return 0;
 							let imgs = document.getElementsByTagName('img');
 							let i=0;
 							let tmp;
@@ -89,25 +92,35 @@ function just_do(e)
 							while(i<imgs.length)
 								{
 									tmp = imgs[i];
+									//tmp.addEventListener('load',()=>{console.log('fff');});
 									if(tmp.height != tmp.width)
+										{
 										if(tmp.height>tmp.width)
 											mnj = (small_pict_size_y)/(0.0+tmp.height);
 										else
 											mnj = (small_pict_size_x)/(0.0+tmp.width);
+										//alert('qwe');
+										}
 									else
 										if(small_pict_size_x<small_pict_size_y)
 											mnj = (small_pict_size_y)/(0.0+tmp.height);
 										else
 											mnj = (small_pict_size_x)/(0.0+tmp.width);	
 											
-									tmp.height = tmp.height*mnj;
-									tmp.width = tmp.width*mnj;
+									//tmp.height = tmp.height*mnj;
+									//tmp.width = tmp.width*mnj;
+									//tmp.style.width=tmp.width*mnj;
+									//tmp.style.height=tmp.height*mnj;
+									tmp.style="height:"+(tmp.height*mnj)+";width:"+(tmp.width*mnj)+";";
+									//console.log([tmp.height,tmp.width,w[0],w[1]]);
 									tmp.addEventListener('click',toBigPicture);
 									i=1+i;
 								}
 							
 						}
 						;
+		P_W = pictures_work;
+		P_W();
 		if(i!=0) return;
 		else i=1;
 		let tg = e.target;
@@ -162,7 +175,7 @@ function just_do(e)
 																tg.innerHTML = this.d[st];
 																i=0;
 																//doSomethingINeed();
-																pictures_work();
+																//pictures_work();
 															}
 														};
 													xhr.onerror=()=>{i=0;}
@@ -174,7 +187,7 @@ function just_do(e)
 													tg.innerHTML= this.d[st];
 													tg.setAttribute('vybor',st);
 													i=0;
-													pictures_work();
+													//pictures_work();
 													//doSomethingINeed();
 												}
 												else i=0;
@@ -190,6 +203,9 @@ function just_do(e)
 		
 		
 	}
+
+
+
 
 
 MC = menu_creator;
@@ -301,5 +317,35 @@ function menu_creator()
 		
 		
 	}
+
+function pict_loaded(e)
+	{
+		let tmp = e.target;
+		//tmp.setAttribute('onload',"");
+		let mnj=0;
+		let he=0,wi=0;
+		if(tmp.height != tmp.width)
+		{
+			if(tmp.height>tmp.width)
+			mnj = (small_pict_size_y)/(0.0+tmp.height);
+			else
+			mnj = (small_pict_size_x)/(0.0+tmp.width);
+		}
+		else
+			if(small_pict_size_x<=small_pict_size_y)
+				mnj = (small_pict_size_y)/(0.0+tmp.height);
+			else
+				mnj = (small_pict_size_x)/(0.0+tmp.width);
+			let r=[tmp.width,tmp.height];
+		
+		he=tmp.height*mnj;
+		wi=tmp.width*mnj;
+		tmp.style="height:"+he+";width:"+wi+";";
+		//console.log([r[0],r[1],tmp.width,tmp.height,mnj]);
+		//alert(to_BG);
+		tmp.addEventListener('click',to_BG);
+		
+	}
+
 
 
