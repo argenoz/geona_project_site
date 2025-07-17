@@ -1,0 +1,84 @@
+
+.geona_theme
+	{
+		background-color:#4f4f4f;
+	}
+	
+
+
+.main_table
+	{
+		border-style:solid;
+		border-collapse:collapse;
+		position:relative;
+	}
+
+
+.big_table
+	{
+		border-width:4px;
+	}
+
+.big_table_inner
+	{
+		border-width:2px;
+	}
+
+
+.small_menu_botton
+	{
+		background-size:cover;
+		position:relative;
+		border-radius:5px;
+		width:170px;
+		height:100px;
+		user-select:none;
+	}
+
+.small_menu_botton_tmp
+	{
+		background-size:cover;
+		position:relative;
+		border-radius:5px;
+		width:170px;
+		height:100px;
+	}
+
+.small_menu_botton_text
+	{
+		position:relative;
+		top:10px;
+		left:10px;
+		color:#ffffff;
+	}
+
+.small_menu_botton_tmp:hover
+	{
+		backdrop-filter:blur(10px);
+	}
+	
+.small_menu_botton_tmp:hover .small_menu_botton_text
+	{
+		top:40px;
+	}
+
+
+@font-face {
+    font-family: BB_and_BCS; /* Гарнитура шрифта */
+    src: url(./fonts/Heart_Breaking_Bad.otf); /* Путь к файлу со шрифтом */
+   }
+  
+.authors_designers_developers
+	{
+		user-select:none;
+		font-size:14pt;
+		position:relative;
+		font-family:BB_and_BCS;
+	}
+
+.ab_ADD
+	{
+		background-color:#026635;
+		width:170px;
+		height:100px;
+	}

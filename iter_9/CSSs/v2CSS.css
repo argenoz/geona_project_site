@@ -1,0 +1,129 @@
+.SToCS
+	{
+		
+		width:100%;
+		border-collapse:collapse;
+		border-style:solid;
+		border-width:0;
+		text-align:center;
+	}
+
+
+.SToCS_cell
+	{
+		width:100px;
+		height:10px;
+		border-width:2px;
+	}
+	
+.SToCS_head
+	{
+		width:100%;
+		border-bottom-width:4px;
+	}
+
+
+	
+.SToCS_headCell
+	{
+		border-left-width:2px;
+		border-right-width:2px;
+		border-bottom-width:4px;
+	}
+
+.SToCS_div
+	{
+		height:100px;
+		width:100px;
+		position:relative;
+	}
+
+.SToCS_div_text
+	{
+		top:30px;
+		position:relative;
+		text-align:center;
+		
+	}
+
+.SToCS_L
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-bottom-width:2px;
+		border-top-width:2px;
+		border-left-width:0px;
+		border-right-width:4px;
+		
+	}
+
+.SToCS_H
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-right-width:2px;
+		border-top-width:0px;
+		border-left-width:2px;
+		border-right-width:2px;
+	}
+
+.SToCS_R
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-bottom-width:2px;
+		border-top-width:2px;
+		border-left-width:2px;
+		border-right-width:0px;
+	}
+
+.SToCS_RH
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-bottom-width:2px;
+		border-top-width:0px;
+		border-left-width:2px;
+		border-right-width:0px;
+	}
+
+.SToCS_
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-bottom-width:2px;
+		border-top-width:2px;
+		border-left-width:2px;
+		border-right-width:2px;
+	}
+
+.SToCS_LH
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-bottom-width:2px;
+		border-top-width:0px;
+		border-left-width:0px;
+		border-right-width:4px;
+		
+	}
+
+.SToCS__
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-bottom-width:0px;
+		border-top-width:2px;
+		border-left-width:2px;
+		border-right-width:2px;
+	}
+
+.SToCS_L_
+	{
+		border-collapse:collapse;
+		border-style:solid;
+		border-bottom-width:0px;
+		border-top-width:2px;
+		border-left-width:0px;
+		border-right-width:4px;
+	}

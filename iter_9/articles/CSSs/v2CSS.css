@@ -1,0 +1,31 @@
+.SToCS
+	{
+		border-style:solid;
+		width:100%;
+		border-collapse:collapse;
+		text-align:center;
+	}
+
+
+.SToCS_cell
+	{
+		width:70px;
+		height:10px;
+		border-width:2px;
+	}
+	
+.SToCS_head
+	{
+		width:100%;
+	}
+
+
+	
+.SToCS_headCell
+	{
+		border-left-width:2px;
+		border-right-width:2px;
+		border-bottom-width:4px;
+	}
+
+
