@@ -23,7 +23,7 @@ function just_do(e)
 										//if(e.target.tagName!='IMG'&&e.target.tagName!='img')
 											{
 												fon = document.createElement('div');
-												fon.style ="position:absolute;height:"+(he)+";width:"+(wi)+";backdrop-filter:blur(5px);top:0;left:0;";
+												fon.style ="position:absolute;height:"+(he)+";width:"+(wi)+";backdrop-filter:blur(5px) brightness(30%);top:0;left:0;";
 												
 												pct=[pct,document.createElement('img')];
 												pct[1].setAttribute('src',pct[0]);
