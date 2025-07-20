@@ -34,12 +34,10 @@ function just_do(e)
 												fon.style ="position:absolute;height:"+(he)+";width:"+(wi)+";backdrop-filter:blur(5px) brightness(30%);top:0;left:0;";
 												
 												pct=[pct,document.createElement('img')];
-												let src_=pct[0];
 												
+												pct[1].setAttribute('src',pct[0]);
 												pct=pct[1];
-												
-												
-												let obrabotka=()=>{
+												pct.addEventListener('load',()=>{alert('www')});
 												fon.appendChild(pct);
 												document.body.appendChild(fon);
 												e=[pct,fon,e.target];
@@ -90,10 +88,8 @@ function just_do(e)
 																	
 													}
 												
-												};//konec lambda
 												
-												pct.addEventListener('load',()=>{obrabotka();});
-												pct.setAttribute('src',src_);
+												
 											}
 										
 									};

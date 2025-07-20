@@ -133,10 +133,16 @@
 		border-style:solid;
 		border-width:2px;
 		border-radius:10px;
+		height:200px;
+		width:200px;
+		background-color:#0000CD;
 	}
 	
 	
-
+.dsrcpt_class_pict:hover
+	{
+		background-color:#B22222;
+	}
 	
 	
 	
