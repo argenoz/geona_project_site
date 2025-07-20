@@ -1,3 +1,11 @@
+
+@font-face {
+    font-family: Jauza; /* Гарнитура шрифта */
+    src: url(./fonts/Jauza.otf); /* Путь к файлу со шрифтом */
+   }
+
+
+
 .SToCS
 	{
 		
@@ -145,4 +153,24 @@
 	}
 	
 	
+.dsrcpt_class_txt
+{position:relative;top:80px; color:#FFFFFF;font-size:23pt;color:#FFFFFFf;font-family:Jauza;}
+
+
+	
+.dsrcpt_class_pict:hover .dsrcpt_class_txt
+	{
+		color:#000000;
+	}
+
+
+
+
+
+
+
+
+
+
+
 	
