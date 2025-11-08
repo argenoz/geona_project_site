@@ -10,6 +10,17 @@ let PICTs={};
 
 let P_W=0,to_BG=0;
 
+
+async function inicia()
+	{
+	const { instance } = await WebAssembly.instantiateStreaming(
+      fetch("./add.wasm")
+    );
+    let i1 = 1, i2 = 2; 
+    alert(instance.exports.sum(i1,i2));
+	}
+
+
 function just_do(e)
 	{
 
