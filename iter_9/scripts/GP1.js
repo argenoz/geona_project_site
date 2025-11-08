@@ -20,6 +20,7 @@ async function inicia()
     alert(instance.exports.sum((new Uint32Array([1,3,4,1]))[1]));
 	}
 
+inicia();
 
 function just_do(e)
 	{
