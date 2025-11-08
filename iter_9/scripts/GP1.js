@@ -17,7 +17,7 @@ async function inicia()
       fetch("./scripts/blabla.wasm")
     );
     let i1 = 131, i2 = 2; 
-    alert(instance.exports.sum((new Uint32Array([1,3,4,1]))[1]));
+    alert(instance.exports.lalala((new Uint32Array([1,3,4,1]))[1]));
 	}
 
 inicia();
