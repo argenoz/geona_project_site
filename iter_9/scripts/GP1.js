@@ -16,8 +16,8 @@ async function inicia()
 	const { instance } = await WebAssembly.instantiateStreaming(
       fetch("./scripts/blabla.wasm")
     );
-    let i1 = 1, i2 = 2; 
-    alert(instance.exports.sum(i1,i2));
+    let i1 = 131, i2 = 2; 
+    alert(instance.exports.sum((new Uint32Array([1,3,4,1]))[1]));
 	}
 
 
