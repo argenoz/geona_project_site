@@ -10,18 +10,6 @@ let PICTs={};
 
 let P_W=0,to_BG=0;
 
-
-async function inicia()
-	{
-	const { instance } = await WebAssembly.instantiateStreaming(
-      fetch("./scripts/blabla.wasm")
-    );
-    let i1 = 131, i2 = 2; 
-    alert(instance.exports.lalala((new Uint32Array([1,3,4,1]))[1]));
-	}
-
-inicia();
-
 function just_do(e)
 	{
 
@@ -373,6 +361,22 @@ function pict_loaded(e)
 		
 		
 	}
+
+
+function formuly()
+	{
+		let fr = document.createElement("iframe");
+		fr.style.width="600px";
+		fr.style.height="400px";
+		fr.style.position="absolute";
+		fr.style.left="50px";
+		fr.style.top="50px";
+		fr.setAttribute("src","qwe.html");
+		document.getElementById("dlya_formul").appendChild(fr);
+		
+	}
+
+
 
 
 
