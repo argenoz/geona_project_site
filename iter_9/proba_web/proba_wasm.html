@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<style>
+		div {
+		width:100px;height:100px;border-style:solid;border-width:2px;border-radius:5px;background-color:#0000ff;
+		}
+		div:hover
+		{
+		background-color:#92000f;
+		}
+		</style>
+		<script>
+		let PROGA={};
+		function knopka()
+			{
+			let knopa = document.createElement("div");
+			document.body.appendChild(knopa);
+			
+			let tb = document.createElement("table");
+			let tr_ = 	document.createElement("tr");
+			let td_ = 	document.createElement("td");
+			let fi = document.createElement("input");
+			fi.setAttribute("type","text");
+			fi.setAttribute("value","0");
+			fi.setAttribute("id","fi");
+			tb.appendChild(tr_);
+			tr_.appendChild(td_);
+			td_.appendChild(fi);
+			document.body.appendChild(tb);
+			let fo = document.createElement("input");
+			fo.setAttribute("type","text");
+			fo.setAttribute("value","0");
+			fo.setAttribute("id","fo");
+			td_.appendChild(fo);
+			knopa.setAttribute('id',"raschet_c");
+			knopa.addEventListener("click",
+				function()
+					{
+					let pro=PROGA["na_c"];
+					if(pro==undefined)
+						{
+						PROGA["na_c"] = 1;
+						pro = new XMLHttpRequest();
+						pro.open("GET","./proga_c.wasm");
+						pro.responseType="arraybuffer";
+						pro.onload=()=>
+										{
+										//PROGA["na_c"] = WebAssembly.instantiate(pro.response);
+										//PROGA["na_c"].then((res)=>{PROGA["na_c"]=res;alert("KKK");});
+										//document.getElementById("raschet_c").click();
+										WebAssembly.instantiate(pro.response).then((res)=>{PROGA["na_c"]=res;document.getElementById("raschet_c").click();;});
+										};
+						pro.send();
+						}
+					else if(pro==1)
+							return;
+					else
+						document.getElementById("fo").setAttribute("value",
+							pro.instance.exports.raschet(parseInt(document.getElementById("fi").value))
+							);
+						
+						
+					
+					}
+								);
+			
+			
+			}
+		</script>
+	</head>
+	<body onload="knopka()" style="background-color:#ffffff;">
+	
+	</body>
+</html>

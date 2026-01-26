@@ -18,9 +18,34 @@
 	</tr>
 	<tr>
 		<td colspan=2 id="dlya_formul">
-		<button onclick="formuly()">
-		qweqwewqe
-		</button>
+		<table>
+			<tr>
+				<td>
+					<button onclick="formuly()">
+					Galerkin
+					</button>
+				</td>
+				<td>
+					<button onclick='(function(){
+					if(null!=document.getElementById("raschet_na_c"))
+						return;
+					let fr = document.createElement("iframe");
+						fr.style.width="600px";
+						fr.style.height="400px";
+						fr.style.position="absolute";
+						fr.style.left="50px";
+						fr.style.top="200px";
+						fr.setAttribute("src","proba_web/proba_wasm.html");
+						document.getElementById("dlya_formul").appendChild(fr);
+						fr.setAttribute("id","raschet_na_c");
+					}
+								)()'>
+					wasm_proba
+					</button>
+				</td>
+			</tr>
+		</table>
+		
 		</td>
 	</tr>
 </table>
