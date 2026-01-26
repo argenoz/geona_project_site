@@ -365,12 +365,15 @@ function pict_loaded(e)
 
 function formuly()
 	{
+		if(null!=document.getElementById("galerkin"))
+				return;
 		let fr = document.createElement("iframe");
+		fr.setAttribute("id","galerkin");
 		fr.style.width="600px";
 		fr.style.height="400px";
 		fr.style.position="absolute";
 		fr.style.left="50px";
-		fr.style.top="50px";
+		fr.style.top="600px";
 		fr.setAttribute("src","qwe.html");
 		document.getElementById("dlya_formul").appendChild(fr);
 		
