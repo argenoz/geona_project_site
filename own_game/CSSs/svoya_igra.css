@@ -1,0 +1,73 @@
+
+body
+{
+	background-color:#4169E1;
+	
+}
+
+.cells_of_questions
+	{
+		border-style:solid;
+		border-width:4px;
+		border-radius:5px;
+	}
+
+.cells_of_main_table
+	{
+		
+	}
+
+.themes
+	{
+		border-style:solid;
+		border-width:1px;
+		border-radius:5px;
+		
+	}
+
+.vopros
+	{
+		border-style:solid;
+		border-width:1px;
+		border-radius:5px;
+		background-color:#007500;
+		
+	}
+.vopros_
+	{
+		border-style:solid;
+		border-width:1px;
+		border-radius:5px;
+		background-color:#007500;
+		
+	}
+.vopros:hover
+	{
+		background-color:#880000;
+	}
+
+.oknoVoprosa
+	{
+		border-style:solid;
+		border-width:1px;
+		border-radius:5px;
+		background-color:#4169E1;
+		position:absolute;
+		
+	}
+	
+	
+.otvet
+	{
+		border-style:solid;
+		border-width:1px;
+		border-radius:5px;
+		background-color:#4169E1;
+	}
+.otvet:hover
+	{
+		background-color:#880000;
+	}
+
+	
+
