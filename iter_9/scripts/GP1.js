@@ -365,6 +365,7 @@ function pict_loaded(e)
 
 function formuly()
 	{
+		/*
 		if(null!=document.getElementById("galerkin"))
 				return;
 		let fr = document.createElement("iframe");
@@ -376,7 +377,7 @@ function formuly()
 		fr.style.top="600px";
 		fr.setAttribute("src","qwe.html");
 		document.getElementById("dlya_formul").appendChild(fr);
-		
+		*/
 	}
 
 
